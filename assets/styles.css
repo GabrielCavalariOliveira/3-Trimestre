@@ -4,7 +4,7 @@
     --card-back-color: #00F48F;
 }
 body{
-    background: url("img/bg-desktop.webp");
+    background-color: url("img/bg-desktop.webp");
     font-family: Bai jamjuree;
 }
 footer{
@@ -66,12 +66,24 @@ footer p {
     position: absolute;
     height: 100%;
     width: 100%;
+    box-sizing: border-box;
 }
 .cartao_conteudo_resposta{
     transform: rotateY(180deg);
+    background-color: rgba(0, 244, 191, 1);
+    border: 4xp solid var(--card-back-color)
 }
 .cartao_conteudo p{
     margin-top: 1rem;
     padding: 2rem;
     margin-top: 4rem;
+    font-size: 3.8vw;
+}
+@media (max-widt: 560px){
+    body {
+        background: url('img/bg.mobile.webp');
+    }
+}
+.cartao{
+    flex: 1 0 calc(100% -rem)
 }
